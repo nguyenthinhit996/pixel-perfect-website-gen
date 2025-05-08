@@ -14,28 +14,28 @@ const Index = () => {
       {/* Hero Section */}
       <div className="bg-vib-blue relative overflow-hidden">
         <div className="container mx-auto px-4 py-12 md:py-20">
-          <div className="flex justify-center md:justify-start mb-12">
+          <div className="flex justify-center mb-12">
             <Logo />
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="text-white">
+            <div className="text-white text-center md:text-left">
               <h1 className="text-3xl md:text-4xl font-bold mb-2">Vay 1 tỷ trả góc 1 triệu</h1>
               <p className="text-white/90 text-lg mb-8">Khi vay mua bất động sản</p>
             </div>
             
-            <div className="relative z-10">
+            <div className="flex justify-center relative z-10">
               <img 
                 src="/lovable-uploads/e2321f14-fdbf-4d48-b227-014104a2cc2e.png" 
                 alt="Family at home" 
-                className="md:absolute md:right-[-100px] md:top-[-50px] md:w-[600px] rounded-lg"
+                className="rounded-lg w-full max-w-md"
               />
             </div>
           </div>
         </div>
         
         {/* Loan Form */}
-        <div className="container mx-auto px-4 relative z-20 md:translate-y-1/4">
+        <div className="container mx-auto px-4 relative z-20 md:translate-y-1/4 flex justify-center">
           <LoanForm />
         </div>
       </div>
