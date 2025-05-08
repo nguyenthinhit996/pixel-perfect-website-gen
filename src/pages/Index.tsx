@@ -38,7 +38,7 @@ const Index = () => {
         </div>
         
         {/* Loan Form */}
-        <div className="container mx-auto px-4 relative z-20 md:translate-y-1/4 flex justify-center">
+        <div className="container relative z-10 mx-auto px-4 relative z-20 md:translate-y-1/4 flex justify-center ">
           <LoanForm />
         </div>
       </div>
