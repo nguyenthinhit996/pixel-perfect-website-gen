@@ -17,11 +17,11 @@ const Index = () => {
           backgroundImage: `url(https://www.vib.com.vn/wps/wcm/connect/c08f246a-1549-4af1-9e10-c76f2bf684df/Campaign-landing-desktop-mortgage.webp?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c08f246a-1549-4af1-9e10-c76f2bf684df-ppCTKRT)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          height: '900px'
+          height: '400px'
         }}
       >
-        <div className="container mx-auto px-4 py-12 md:py-20">
-          <div className="flex justify-center mb-12">
+        <div className="container mx-auto px-4 py-12">
+          <div className="flex justify-center mb-4">
             <Logo />
           </div>
           
@@ -32,15 +32,13 @@ const Index = () => {
             </div>
             
             <div className="flex justify-center relative z-10">
-              
+              {/* Placing LoanForm directly here for visibility */}
+              <LoanForm />
             </div>
           </div>
         </div>
         
-        {/* Loan Form */}
-        <div className="container relative z-10 mx-auto px-4 relative z-20 md:translate-y-1/4 flex justify-center ">
-          <LoanForm />
-        </div>
+        {/* Removing the lower positioned LoanForm */}
       </div>
       
       {/* Content Sections */}
