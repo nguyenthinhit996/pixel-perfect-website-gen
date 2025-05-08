@@ -1,12 +1,63 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Logo from '@/components/Logo';
+import LoanForm from '@/components/LoanForm';
+import LoanFeatures from '@/components/LoanFeatures';
+import LoanPolicy from '@/components/LoanPolicy';
+import LoanCalculator from '@/components/LoanCalculator';
+import FAQ from '@/components/FAQ';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen flex flex-col">
+      {/* Hero Section */}
+      <div className="bg-vib-blue relative overflow-hidden">
+        <div className="container mx-auto px-4 py-12 md:py-20">
+          <div className="flex justify-center md:justify-start mb-12">
+            <Logo />
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="text-white">
+              <h1 className="text-3xl md:text-4xl font-bold mb-2">Vay 1 tỷ trả góc 1 triệu</h1>
+              <p className="text-white/90 text-lg mb-8">Khi vay mua bất động sản</p>
+            </div>
+            
+            <div className="relative z-10">
+              <img 
+                src="/lovable-uploads/e2321f14-fdbf-4d48-b227-014104a2cc2e.png" 
+                alt="Family at home" 
+                className="md:absolute md:right-[-100px] md:top-[-50px] md:w-[600px] rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+        
+        {/* Loan Form */}
+        <div className="container mx-auto px-4 relative z-20 md:translate-y-1/4">
+          <LoanForm />
+        </div>
       </div>
+      
+      {/* Content Sections */}
+      <div className="container mx-auto px-4 py-24">
+        <LoanFeatures />
+        
+        <div className="my-16">
+          <LoanPolicy />
+        </div>
+        
+        <div className="my-16">
+          <LoanCalculator />
+        </div>
+        
+        <div className="my-16">
+          <FAQ />
+        </div>
+      </div>
+      
+      <Footer />
     </div>
   );
 };
