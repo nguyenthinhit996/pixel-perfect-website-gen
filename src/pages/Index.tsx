@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Logo from '@/components/Logo';
 import LoanForm from '@/components/LoanForm';
@@ -6,10 +7,18 @@ import LoanPolicy from '@/components/LoanPolicy';
 import LoanCalculator from '@/components/LoanCalculator';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
+
 const Index = () => {
   return <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
-      <div className="bg-vib-blue relative overflow-hidden">
+      <div 
+        className="bg-vib-blue relative overflow-hidden" 
+        style={{
+          backgroundImage: `url(https://www.vib.com.vn/wps/wcm/connect/c08f246a-1549-4af1-9e10-c76f2bf684df/Campaign-landing-desktop-mortgage.webp?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c08f246a-1549-4af1-9e10-c76f2bf684df-ppCTKRT)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <div className="container mx-auto px-4 py-12 md:py-20">
           <div className="flex justify-center mb-12">
             <Logo />
