@@ -12,7 +12,7 @@ const Index = () => {
   return <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
       <div 
-        className="bg-vib-blue relative overflow-hidden" 
+        className="bg-vib-blue relative overflow-visiable" 
         style={{
           backgroundImage: `url(https://www.vib.com.vn/wps/wcm/connect/c08f246a-1549-4af1-9e10-c76f2bf684df/Campaign-landing-desktop-mortgage.webp?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c08f246a-1549-4af1-9e10-c76f2bf684df-ppCTKRT)`,
           backgroundSize: 'cover',
@@ -34,13 +34,13 @@ const Index = () => {
         </div>
         
         {/* Removing the lower positioned LoanForm */}
-        <div className="container relative z-10 mx-auto px-4 relative z-20 md:translate-y-1/4 flex justify-center ">
+        <div className="container relative z-10 mx-auto px-4 relative z-20 flex justify-center ">
           <LoanForm />
         </div>
       </div>
       
       {/* Content Sections */}
-      <div className="container mx-auto px-4 py-24">
+      <div className="container mx-auto px-4 py-24 mt-200">
         <LoanFeatures />
         
         <div className="my-16">
