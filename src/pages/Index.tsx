@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Logo from '@/components/Logo';
 import LoanForm from '@/components/LoanForm';
@@ -7,10 +6,8 @@ import LoanPolicy from '@/components/LoanPolicy';
 import LoanCalculator from '@/components/LoanCalculator';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
       <div className="bg-vib-blue relative overflow-hidden">
         <div className="container mx-auto px-4 py-12 md:py-20">
@@ -25,11 +22,7 @@ const Index = () => {
             </div>
             
             <div className="flex justify-center relative z-10">
-              <img 
-                src="/lovable-uploads/e2321f14-fdbf-4d48-b227-014104a2cc2e.png" 
-                alt="Family at home" 
-                className="rounded-lg w-full max-w-md"
-              />
+              
             </div>
           </div>
         </div>
@@ -58,8 +51,6 @@ const Index = () => {
       </div>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
