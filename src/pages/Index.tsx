@@ -40,7 +40,7 @@ const Index = () => {
       </div>
       
       {/* Content Sections */}
-      <div className="container mx-auto px-4 py-24 mt-[200px]">
+      <div className="container mx-auto px-4 py-24 mt-[250px]">
         <LoanFeatures />
         
         <div className="my-16">
