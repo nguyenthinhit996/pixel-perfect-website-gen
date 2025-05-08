@@ -16,7 +16,8 @@ const Index = () => {
         style={{
           backgroundImage: `url(https://www.vib.com.vn/wps/wcm/connect/c08f246a-1549-4af1-9e10-c76f2bf684df/Campaign-landing-desktop-mortgage.webp?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c08f246a-1549-4af1-9e10-c76f2bf684df-ppCTKRT)`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundPosition: 'center',
+          height: '400px'
         }}
       >
         <div className="container mx-auto px-4 py-12 md:py-20">
