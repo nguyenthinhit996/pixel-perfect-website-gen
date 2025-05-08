@@ -30,15 +30,13 @@ const Index = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-2">Vay 1 tỷ trả góc 1 triệu</h1>
               <p className="text-white/90 text-lg mb-8">Khi vay mua bất động sản</p>
             </div>
-            
-            <div className="flex justify-center relative z-10">
-              {/* Placing LoanForm directly here for visibility */}
-              <LoanForm />
-            </div>
           </div>
         </div>
         
         {/* Removing the lower positioned LoanForm */}
+        <div className="container relative z-10 mx-auto px-4 relative z-20 md:translate-y-1/4 flex justify-center ">
+          <LoanForm />
+        </div>
       </div>
       
       {/* Content Sections */}
